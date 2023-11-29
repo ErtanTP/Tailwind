@@ -1,0 +1,8 @@
+{
+    "verbose": true,
+    "ignore": ["*.test.js"],
+    "execMap": { 
+      "npm": "npm run tw"
+    },
+    "ext":"js,html"
+  }
