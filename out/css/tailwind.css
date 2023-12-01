@@ -826,12 +826,12 @@ video {
   letter-spacing: 10px;
 }
 
-.tracking-\[15px\] {
-  letter-spacing: 15px;
+.tracking-\[20px\] {
+  letter-spacing: 20px;
 }
 
-.tracking-\[30px\] {
-  letter-spacing: 30px;
+.tracking-\[25px\] {
+  letter-spacing: 25px;
 }
 
 .tracking-\[5px\] {
@@ -1007,6 +1007,32 @@ video {
     padding: 0.75rem;
   }
 
+  .max-sm\:py-\[00px\] {
+    padding-top: 00px;
+    padding-bottom: 00px;
+  }
+
+  .max-sm\:py-\[100px\] {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .max-sm\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .max-sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .max-sm\:pt-\[0px\] {
+    padding-top: 0px;
+  }
+
+  .max-sm\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
   .max-sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1025,6 +1051,14 @@ video {
   .max-sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-sm\:tracking-\[10px\] {
+    letter-spacing: 10px;
+  }
+
+  .max-sm\:tracking-\[5px\] {
+    letter-spacing: 5px;
   }
 }
 
