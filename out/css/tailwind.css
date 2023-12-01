@@ -903,6 +903,10 @@ video {
   transition-duration: 300ms;
 }
 
+.hover\:mb-\[5px\]:hover {
+  margin-bottom: 5px;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
