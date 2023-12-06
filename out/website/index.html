@@ -4,44 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/tailwind.css" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <!-- hier können Styles rein mit vanilla CSS-->
 <style>
 
   #schatten{
     text-shadow: gray 0 -1px;
+    
   }
-  #shatten:hover{
+  #schatten:hover{
     text-shadow: none;
   }
+  /*#about:active{
+  color: green;
+}
+*/
   h2{
-    text-shadow: gray 0 -2px;
+    text-shadow: gray 0 -2px; 
   }
  
 </style>
 <body class="bg-gray-700 ">
+  <!--Navbar -->
   <div class="container w-full mx-auto ">
-    <div class=" container fixed w-full bg-gray-700 rounded flex  items-baseline justify-center gap-20 tracking-widest p-5 font-semibold text-xl max-sm:gap-10 max-sm:text-sm max-sm:justify-center max-sm:items-center ">
-      <a id="schatten" class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#home">Home</a>
-      <a id="schatten" class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#about">About</a>
-      <a id="schatten" class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#experience">Experience</a>
-      <a id="schatten" class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#projects">Projects</a> 
+    <div class="  container fixed w-full bg-gray-700 rounded flex  items-baseline justify-center gap-20 tracking-widest p-5 font-semibold text-xl max-sm:gap-10 max-sm:text-sm max-sm:justify-center max-sm:items-center ">
+      <a class="text-black hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 focus:text-green-700 z-10 " href="#home">Home</a>
+      <a class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#about">About</a>
+      <a class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#experience">Experience</a>
+      <a class="hover:text-gray-200 hover:underline decoration-yellow-600 decoration-4 transition hover:duration-300 " href="#projects">Projects</a> 
     </div>
+
+  <!-- Home Seite-->
     
     <div id="home" class="max-sm:w[640px] max-sm:block max-sm:text-sm max-sm:p-3 pb-[250px] max-sm:pt-[0px]">
       <h2 class="flex justify-center items-center  pt-40 max-sm:pt-24 text-3xl tracking-[25px] text-gray-950 font-semibold max-sm:text-lg max-sm:tracking-[10px] ">Software Engineer</h2>  
       <h1 class="flex justify-center items-center pt-10 text-4xl text-gray-200 tracking-[10px] font-bold max-sm:text-xl max-sm:tracking-[5px] "> Hey i'm  <<span class="text-yellow-600"> Ertan</span> /> </h1>
-      <p class="flex justify-center items-center pt-4 m-auto text-gray-400 text-xl tracking-[5px] font-semibold max-sm:text-base">Some Quotes i like</p>
-      <p class="flex justify-center items-center pt-4 m-auto text-gray-400 ">“Computer science education cannot make anybody an expert
-      programmer any more than studying brushes and pigment can make somebody an expert painter.” <span class="text-yellow-600">Eric S. Raymond</span></p>
-      <p class="flex justify-center items-center pt-4 m-auto text-gray-400 ">“Any fool can write code that a computer can understand. 
-      Good programmers write code that humans can understand.” <span class="text-yellow-600">Martin Fowler</span></p>
-      <p class="flex justify-center items-center pt-4 m-auto text-gray-400 "> "Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other,
-      with no structural integrity, but just done by brute force and thousands of slaves." <span class="text-yellow-600">Alan Kay</span></p>
-      <p class="flex justify-center items-center pt-4 m-auto text-gray-400 ">“Computer programs are the most complex things that humans make” <span class="text-yellow-600">Douglas Crockford</span></p>
-      <p class="flex  justify-center items-center pt-4 m-auto text-gray-400 ">"First make the change easy (warning: this might be hard), then make the easy change." <span class="text-yellow-600">Kent Beck</span></p>
+      
+      <p class=" flex justify-center items-center pt-4 m-auto text-gray-400 text-xl tracking-[5px] font-semibold max-sm:text-base">Some Quotes i like</p>
+      <div class=" row-auto  pt-4 m-auto text-gray-400 ">
+        <p class="my-5">“Computer science education cannot make anybody an expert
+        programmer any more than studying brushes and pigment can make somebody an expert painter.” <br> <span class="text-yellow-600 flex justify-start items-center" >Eric S. Raymond</span></p>
+        <p class="my-5">“Any fool can write code that a computer can understand. 
+        Good programmers write code that humans can understand.” <br> <span class="text-yellow-600 flex justify-start items-center">Martin Fowler</span></p>
+        <p class="my-5"> "Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other,
+        with no structural integrity, but just done by brute force and thousands of slaves."  <br> <span class="text-yellow-600 flex justify-start items-center">Alan Kay</span></p>
+        <p class="my-5">“Computer programs are the most complex things that humans make” <br> <span class="text-yellow-600 flex justify-start items-center">Douglas Crockford</span></p>
+        <p class="mt-5">"First make the change easy (warning: this might be hard), then make the easy change." <br> <span class="text-yellow-600 flex justify-start items-center">Kent Beck</span></p>
+      </div>
+
     </div>
+
+    <!-- About Seite -->
 
     <div id="about" class="max-sm:p-3 py-[250px] max-sm:pt-[100px] ">
       <h2 class="flex justify-center items-center   text-2xl tracking-[20px] text-gray-950 font-semibold max-sm:text-xl max-sm:tracking-[10px]">About</h2> 
@@ -55,6 +68,7 @@
       </p>
     </div>
 
+    <!-- Experience Seite -->
 
     <div id="experience" class="py-[250px] max-sm:py-[100px]">
       <h2 class="flex justify-center items-center   text-2xl tracking-[20px] text-gray-950 font-semibold max-sm:text-lg max-sm:tracking-[10px]">Experience</h2> 
@@ -85,6 +99,8 @@
       </div>
 
     </div>
+
+    <!-- Proejects Seite -->
 
     <div id="projects" class=" py-[250px] max-sm:py-[00px]">
         <h2  class="flex justify-center items-center pt-[100px] text-3xl tracking-[20px] text-gray-950 font-semibold max-sm:text-xl max-sm:tracking-[10px] ">Projects</h2> 
@@ -122,7 +138,7 @@
 
     </div>
 
-    
+    <!-- Hier ist der Footer -->
 
     <footer>
       <div class="  m-auto max-sm:flex-row container pt-[150px]  ">
@@ -162,7 +178,7 @@
               </a> 
 
               <a href="">
-                <span>
+                <span> 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="CurrentColor" viewBox="0 0 24 24" stroke-width="1.5"  class="w-6 h-6 hover:mb-[5px] max-sm:w-5 max-sm:h-5 stroke-current text-gray-500 hover:text-yellow-600 transition duration-300 hover:cursor-pointer">
                     <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                   </svg>
@@ -181,6 +197,41 @@
 
 
   </div>
+  <!-- Hier mache ich den Button und der Pfeil ist eine SVG Datei wie bei den icons im Footer-->
+
+  <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="hidden fixed z-5 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-semibold transition-colors duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+    </svg>
+    <span class="sr-only">Go to top</span>
+</button>
+ <!-- Beim Scrpit schreibe ich die Logik mit Javascript, was passieren soll, wenn ich nach unten scrolle, dass dann der Button erscheinen soll und mich nach oben auf die Seite führen soll.-->
+<script>
+    // get element mit der ID  holen
+    var toTopButton = document.getElementById("to-top-button");
+
+    // If statement setzten und gucken, obs überhaupt gibt.
+    if (toTopButton) {
+
+        // On scroll event starten und visibility ab einem bestimmten Wert beginnen.
+        window.onscroll = function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        };
+
+        // Schönes und smoothes scrollen nach oben.
+        window.goToTop = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    }
+</script>
 
 </body>
 </html>
